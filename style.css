@@ -1,0 +1,188 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #effeff, #8fffd0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.login-container {
+    background: #fff;
+    padding: 100px;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.login-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.login-container input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.login-container button {
+    display: block;
+    width: 50%;
+    margin: 15px auto;
+    padding: 10px;
+    background: #4facfe;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.login-container button:hover {
+    background: #00c6ff;
+}
+
+.error {
+    color: red;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.success {
+    color: green;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.footer {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    background: rgba(0, 0, 0, 0.2);
+    color: white;
+    font-size: 14px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+.header {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 15px 0;
+    text-align: center;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 22px;
+    letter-spacing: 1px;
+}
+
+/* Toggle Button */
+#darkModeToggle {
+    background: none;
+    border: 1px solid white;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 15px;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background: linear-gradient(135deg, #1e1e1e, #121212);
+}
+
+body.dark-mode .login-container {
+    background: #222;
+    color: white;
+}
+
+body.dark-mode input {
+    background: #333;
+    color: white;
+    border: 1px solid #555;
+}
+
+body.dark-mode button {
+    background: #555;
+}
+
+body.dark-mode .footer,
+body.dark-mode .header {
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.signup-text {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+    color: #333;
+}
+
+.signup-text a {
+    color: #4facfe;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.signup-text a:hover {
+    text-decoration: underline;
+}
+
+/* Dark Mode Support */
+body.dark-mode .signup-text {
+    color: #ccc;
+}
+
+body.dark-mode .signup-text a {
+    color: #00c6ff;
+}
+
+.header {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+/* Logo styling */
+.logo {
+    height: 100px;
+    width: auto;
+}
+
+/* Keep title centered */
+.header h1 {
+    flex: 1;
+    text-align: center;
+    margin: 0;
+    font-size: 22px;
+}
+
+/* Button stays right */
+#darkModeToggle {
+    margin-left: auto;
+}

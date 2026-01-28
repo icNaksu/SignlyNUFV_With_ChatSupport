@@ -1,0 +1,3 @@
+http://localhost/Signly_DataWeb/home.php
+http://localhost/Signly_DataWeb/admin_login.php
+http://localhost/Signly_DataWeb/customer_login.php

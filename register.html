@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Register Signly</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="header">
+    <div class="header-left">
+        <img src="logo.png" alt="Logo" class="logo">
+    </div>
+
+    <h1>Create Account</h1>
+    
+    <button id="darkModeToggle">🌙 Dark Mode</button>
+  </header>
+
+  <div class="login-container">
+    <h2>Sign Up</h2>
+
+    <input type="text" id="newUsername" placeholder="Username" />
+    <input type="email" id="newEmail" placeholder="Email" />
+    <input type="password" id="newPassword" placeholder="Password" />
+    <input type="password" id="confirmPassword" placeholder="Confirm Password" />
+
+    <button onclick="register()">Register</button>
+
+    <p class="signup-text">
+      Already have an account?
+      <a href="index.html">Log in</a>
+    </p>
+
+    <div id="registerMessage"></div>
+  </div>
+
+  <footer class="footer">
+    <p>© 2026 Your Website Name | All Rights Reserved</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

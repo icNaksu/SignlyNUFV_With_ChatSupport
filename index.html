@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/landing.css">
+  <link rel="icon" href="png/signly.png" type="image/png">
+  <title>Welcome to Signly</title>
+</head>
+<body>
+
+<div class="landing-container">
+  <!-- Header -->
+  <header class="landing-header">
+    <div class="logo">
+      <img src="png/signly.png" alt="Signly Logo">
+      <span>Signly</span>
+    </div>
+    <nav class="auth-nav">
+      <button class="nav-btn" id="showLogin">Login</button>
+      <button class="nav-btn primary" id="showSignup">Sign Up</button>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="hero-content">
+      <h1>Welcome to Signly</h1>
+      <p>Bridging communication through sign language recognition and translation.</p>
+      <p class="hero-subtitle">Connect with our team and get support through live chat</p>
+    </div>
+    <div class="hero-image">
+      <img src="png/signly.png" alt="Signly">
+    </div>
+  </section>
+
+  <!-- Admin Login Link -->
+  <div class="admin-link">
+    <a href="admin_login.php">Admin Login</a>
+  </div>
+</div>
+
+<!-- Login Modal -->
+<div class="modal" id="loginModal">
+  <div class="modal-content">
+    <span class="close" id="closeLogin">&times;</span>
+    <h2>Customer Login</h2>
+    <form action="customer_login.php" method="POST">
+      <div class="form-group">
+        <label for="login-email">Email</label>
+        <input type="email" id="login-email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="login-password">Password</label>
+        <input type="password" id="login-password" name="password" required>
+      </div>
+      <button type="submit" class="btn-submit">Login</button>
+    </form>
+    <p class="switch-text">Don't have an account? <a href="#" id="switchToSignup">Sign up here</a></p>
+  </div>
+</div>
+
+<!-- Signup Modal -->
+<div class="modal" id="signupModal">
+  <div class="modal-content">
+    <span class="close" id="closeSignup">&times;</span>
+    <h2>Create Account</h2>
+    <form action="customer_signup.php" method="POST">
+      <div class="form-group">
+        <label for="signup-name">Full Name</label>
+        <input type="text" id="signup-name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="signup-email">Email</label>
+        <input type="email" id="signup-email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="signup-password">Password</label>
+        <input type="password" id="signup-password" name="password" required minlength="6">
+      </div>
+      <div class="form-group">
+        <label for="signup-confirm">Confirm Password</label>
+        <input type="password" id="signup-confirm" name="confirm_password" required minlength="6">
+      </div>
+      <button type="submit" class="btn-submit">Sign Up</button>
+    </form>
+    <p class="switch-text">Already have an account? <a href="#" id="switchToLogin">Login here</a></p>
+  </div>
+</div>
+
+<script src="js/landing.js"></script>
+</body>
+</html>
